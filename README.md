@@ -20,3 +20,5 @@ Let's use the Ubuntu Server torrent in our example.
 * [X] Documentation
 * [ ] Easy run script
 * [ ] Post to dockerhub
+* [X] Reduce Image Size
+* [ ] Investigate Alpine Linux for even smaller size
