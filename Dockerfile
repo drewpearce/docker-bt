@@ -12,4 +12,4 @@ RUN apt-get autoremove
 
 # Startup
 WORKDIR /root/Downloads
-CMD ["aria2c --max-overall-upload-limit=1K --seed-time=0 --summary-interval=10 $URI"]
+CMD aria2c --max-overall-upload-limit=1K --seed-time=0 --summary-interval=10 $URI
