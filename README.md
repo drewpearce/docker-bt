@@ -2,11 +2,11 @@
 
 ## Docs
 ### Intro
-This is a small Docker container that will download a torrent from the supplied URL of a .torrent file.
+This is a small Docker container that will download a torrent from the supplied URL of a .torrent file or magnet link.
 
 ### Necessary Options and Environment Vars
 * `-v`: You will need to mount a local directory to `/root/Downloads`
-* `-e "URL=..."`: You need to supply the .torrent URL as an environment variable
+* `-e "URI=..."`: You need to supply the torrent URI as an environment variable
 
 ### Example usage
 Let's use the Ubuntu Server torrent in our example.
@@ -21,6 +21,7 @@ Let's use the Ubuntu Server torrent in our example.
 
 ## TODO
 * [X] Documentation
+* [X] Support Magnet links
 * [ ] Easy run script
 * [X] Post to dockerhub
 * [X] Reduce Image Size

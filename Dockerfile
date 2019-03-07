@@ -6,14 +6,10 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Update and Install
 RUN apt-get update \
-    && apt-get install -y curl ctorrent \
+    && apt-get install -y aria2 \
     && rm -rf /var/lib/apt/lists/*
 RUN apt-get autoremove
 
-# Scripts
-ADD entrypoint.sh /bin/
-ADD stop-ctorrent.sh /bin/
-
 # Startup
 WORKDIR /root/Downloads
-ENTRYPOINT /bin/entrypoint.sh $URL
+CMD aria2c --max-overall-upload-limit=1K --seed-time=0 --summary-interval=10 $URI
