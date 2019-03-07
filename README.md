@@ -6,7 +6,7 @@ This is a small Docker container that will download a torrent from the supplied 
 
 ### Necessary Options and Environment Vars
 * `-v`: You will need to mount a local directory to `/root/Downloads`
-* `-e "URL=..."`: You need to supply the torrent URL as an environment variable
+* `-e "URI=..."`: You need to supply the torrent URI as an environment variable
 
 ### Example usage
 Let's use the Ubuntu Server torrent in our example.
