@@ -2,7 +2,7 @@
 
 ## Docs
 ### Intro
-This is a small Docker container that will download a torrent from the supplied URL of a .torrent file or magnet link.
+This is a small Docker container that will download a torrent from the supplied URI of a .torrent file or magnet link.
 
 ### Necessary Options and Environment Vars
 * `-v`: You will need to mount a local directory to `/root/Downloads`
@@ -17,7 +17,7 @@ Let's use the Ubuntu Server torrent in our example.
   * Pull
     * `docker pull drewpearce/bt`
 * Run container and destroy after completion
-  * `docker run --rm -v $HOME/Downloads:/root/Downloads -e "URL=http://releases.ubuntu.com/18.04/ubuntu-18.04-live-server-amd64.iso.torrent" drewpearce/bt`
+  * `docker run --rm -v $HOME/Downloads:/root/Downloads -e "URI=http://releases.ubuntu.com/18.04/ubuntu-18.04-live-server-amd64.iso.torrent" drewpearce/bt`
 
 ## TODO
 * [X] Documentation
